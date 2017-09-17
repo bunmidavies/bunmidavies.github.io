@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Orbs</title>
+    <script src="p5.js"></script>
+    <script src="p5.dom.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
+  body{
+    background-color:#DEDEDE;
+    font-family:"Raleway";
+  }
+
+ 
+  #main{float:left;
+  margin-right:200px;
+  }
+
+  #about{float:right;
+  text-align:center;
+}
+
+  a{text-decoration:none;
+  color:grey;}
+  
+  a:hover{color:black;}
+  script{position:fixed;}
+</style>
+<script src="orbs.js"></script>
+</head>
+<body>
+<div id="about">
+<div style="font-size:60px;">Orbs</div>
+<a href="https://www.openprocessing.org/sketch/405926" target="_blank">original</a><br/>
+<a href="https://github.com/bunmidavies/orbs" target="_blank">Github repo</a>
+</div>
+
+
+<div class="container" id="main">
+
+    <div id="container">
+        Size of orbs
+        <input type="range" min="1" max="100" value="50" id="usermaxsize" oninput="update('usermaxsizeval','usermaxsize')"><span id="usermaxsizeval">50</span>
+      </div>  
+
+      <div id="container">
+          Width
+          <input type="range" min="1" max="300" value="100" id="length" oninput="update('lengthval','length')"><span id="lengthval">100</span>
+        </div>
+      <div id="container">
+        Height
+          <input type="range" min="1" max="200" value="50" id="height" oninput="update('heightval','height')"><span id="heightval">50</span>
+        </div>  
+
+  <div id="container">
+        Framerate
+      <input type="range" min="2" max="300" value="100" id="speed" oninput="update('speedval','speed')"><span id="speedval">100</span>
+    </div>
+
+
+      Red
+    <input type="range" min="1" max="255" value="144" id="red" oninput="update('redval','red')"><span id="redval">144</span>
+
+
+    Green
+  <input type="range" min="1" max="255" value="144" id="green" oninput="update('greenval','green')"><span id="greenval">144</span>
+
+
+  Blue
+<input type="range" min="1" max="255" value="144" id="blue" oninput="update('blueval','blue')"><span id="blueval">144</span>
+
+ 
+</div>
+</body>
+
+</html>
