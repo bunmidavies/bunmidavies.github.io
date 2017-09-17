@@ -16,12 +16,12 @@ a:hover{
 }
 @keyframes changecol {
     0%{background-color: #6DC66D;}
-    10%{background-color: #D444A5;}
-    25%{background-color: #D4A144;}
+    10%{background-color: #D482B9;}
+    25%{background-color: #D8AA58;}
     50%{background-color: #4B4BB4;}
-    60%{background-color: #161630;}
+    60%{background-color: #E8D035;}
     75%{background-color: #C13E3E;}
-    99%{background-color: #6DC66D;}
+    100%{background-color: #6DC66D;}
 }
 .container{
     margin-top:10px;
