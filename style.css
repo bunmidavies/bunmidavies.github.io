@@ -3,8 +3,8 @@
 
 
 
-a:hover{
-  text-decoration: none;
+a:hover, a:focus{
+    text-decoration: none;
 }
 
 
@@ -26,14 +26,14 @@ a:hover{
 .container{
     margin-top:10px;
     
-    width:100%;
+    width:90%;
     padding:0;
     }
 
 
 
 body{display:block;
-width:60%;
+width:70%;
 margin:auto;
 
 background-color:#6DC66D;
@@ -83,6 +83,7 @@ color:grey;
 font-size:24px;
 transition-duration:.25s;
 margin-right:20px;
+
 }
 
 a:before{
