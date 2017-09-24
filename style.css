@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 
+html{overflow-y:scroll;
+     }
+
 
 a:hover, a:focus{
     text-decoration: none;
@@ -29,6 +32,7 @@ a:hover, a:focus{
     width:90%;
     padding:0;
     }
+
 
 
 
@@ -71,8 +75,15 @@ transition-duration:1s;
 
 }
 
-ul{font-size:24px;}
+#skillsbutton:hover{cursor:pointer;
+text-shadow:0.2px 0.2px 0.2px grey;}
+#gamebutton:hover{cursor:pointer;
+text-shadow:0.2px 0.2px 0.2px grey;}
+#musicbutton:hover{cursor:pointer;
+text-shadow:0.2px 0.2px 0.2px grey;}
 
+ul{font-size:24px;}
+li:hover{color:#419841;}
 
 
 p{color:#333;
