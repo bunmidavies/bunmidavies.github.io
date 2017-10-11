@@ -2,9 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 
+html{overflow-y:scroll;
+     }
 
-a:hover{
-  text-decoration: none;
+
+a:hover, a:focus{
+    text-decoration: none;
 }
 
 
@@ -16,22 +19,35 @@ a:hover{
 }
 @keyframes changecol {
     0%{background-color: #6DC66D;}
-    10%{background-color: #D444A5;}
-    25%{background-color: #D4A144;}
+    10%{background-color: #D482B9;}
+    25%{background-color: #D8AA58;}
     50%{background-color: #4B4BB4;}
-    60%{background-color: #161630;}
+    60%{background-color: #E8D035;}
     75%{background-color: #C13E3E;}
-    99%{background-color: #6DC66D;}
+    100%{background-color: #6DC66D;}
 }
 .container{
     margin-top:10px;
     
     width:90%;
-    padding:0;
+   padding:0;
     }
 
+    @media screen and (max-width:980px){
+        body{
+            width:100%;
+        }
+    }
+    
+    @media screen and (min-width:981px){
+        body{
+            width:70%;
+        }
+    }
+
+
 body{display:block;
-width:60%;
+
 margin:auto;
 
 background-color:#6DC66D;
@@ -69,8 +85,17 @@ transition-duration:1s;
 
 }
 
-ul{font-size:24px;}
+h2{font-size:34px;}
 
+#skillsbutton:hover{cursor:pointer;
+text-shadow:0.2px 0.2px 0.2px grey;}
+#gamebutton:hover{cursor:pointer;
+text-shadow:0.2px 0.2px 0.2px grey;}
+#musicbutton:hover{cursor:pointer;
+text-shadow:0.2px 0.2px 0.2px grey;}
+
+ul{font-size:24px;}
+li:hover{color:#419841;}
 
 
 p{color:#333;
@@ -81,6 +106,7 @@ color:grey;
 font-size:24px;
 transition-duration:.25s;
 margin-right:20px;
+
 }
 
 a:before{
@@ -90,6 +116,7 @@ a:before{
     height: 2px;
     bottom: 0;
     left: 0;
+    border-radius:4px;
     background:black;
     visibility: hidden;
     border-radius: 5px;

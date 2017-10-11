@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Projects</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css?v=3.4.1">
-    </head>
 
+<head>
+    <title>Projects</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css?v=3.4.1">
+</head>
 
-    <body>
-        <div id="main">
-                <div class="container">
+<body>
+    <div id="main">
+        <div class="container">
 
+            <h1>Projects</h1>
 
-        <h1>Projects</h1>
-
-        <div id="navbar"><a href="index.html">about</a><a href="projects.html">projects</a></div>
-                </div>
-                <div class="container">
-       <p>A short list of things I have done with my life, so far</p>
-                </div>
-            </div>
-            
-                <div class="container">
-        <div id="project">
-       <h2>The superformula</h2>
-       <p>Some studies about the superformula, made by Johan Gielis in 2000.</p>
-       <a href="">page</a><a href="">github repo</a>
+            <div id="navbar"><a href="index.html">about</a><a href="projects.html">projects</a><a href="contact.html">contact</a></div>
         </div>
+        <div class="container">
+            <p>A short list of things I have done with my life, so far</p>
         </div>
-        
+    </div>
 
-    
-    </body>
+    <div id="list">
+
+    </div>
+
+
+    <script>
+            var projects = [
+                {name:"pythoninanutshell",repo:"pythoninanutshell",desc:"Python, summarised in a nutshell."},
+                {name:"minipong",repo:"minipong",desc:"Simple pong made with html5 canvas."},
+                {name:"fizzbuzz",repo:"fizzbuzz",desc:"The problem that apparently eliminates 99% of computer scientists."},
+                {name:"really good<span style='font-family:arial'>™</span>",repo:"reallygood",desc:"A small page for a discord server i'm in, called really good<span style='font-family:arial'>™</span>"},
+                {name:"The superformula",repo:"superformula",desc:"A bit of an explanation of the superformula, made by Johan Gielis in 2000."},
+                {name:"Orbs",repo:"orbs",desc:"Colorful, trippy orbs."}
+                ];
+            $(function(){
+                for(var i=0;i<projects.length;i++)
+                {
+                    var elem = $(`
+                    <div class="container">
+                <div id="project">
+                    <h2>`+projects[i].name+`</h2>
+                    <p>`+projects[i].desc+`</p>
+                    <a href="http://bunmidavies.github.io/`+projects[i].repo+`" target="_blank">page</a><a href="https://github.com/bunmidavies/`+projects[i].repo+`" target="_blank">github repo</a>
+                </div>
+                </div>`)
+                    $("#list").append(elem);
+                }
+            })
+        </script>
+
+
+</body>
+
 </html>

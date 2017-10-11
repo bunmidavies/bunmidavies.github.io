@@ -2,8 +2,59 @@
 <html>
     <head>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css?v=3.4.1">
         <title>Bunmi Davies</title>
+
+        <script>
+            var skclick=0;
+            var gmclick=0;
+            var msclick=0;
+            $(function(){
+                
+                $("#skillsbutton").on("click",function(){
+                    if(skclick==0){
+                    $("#skillsbutton").text("▼Skills");
+                    skclick=1;
+                    }
+                    else{
+                        $("#skillsbutton").text("►Skills");
+                    skclick=0;
+                    }
+                    $("#skills").slideToggle(1000);
+                    
+                });
+
+                $("#gamebutton").on("click",function(){
+                    if(gmclick==0){
+                    $("#gamebutton").text("▼Games");
+                    gmclick=1;
+                    }
+                    else{
+                        $("#gamebutton").text("►Games");
+                    gmclick=0;
+                    }
+                    $("#games").slideToggle(1000);
+                    
+                });
+
+                $("#musicbutton").on("click",function(){
+                    if(msclick==0){
+                    $("#musicbutton").text("▼Music (Only a few, actual list is too long)");
+                    msclick=1;
+                    }
+                    else{
+                        $("#musicbutton").text("►Music (Only a few, actual list is too long)");
+                    msclick=0;
+                    }
+                    $("#music").slideToggle(1000);
+                    
+                });
+            });
+            </script>
     </head>
 
 
@@ -15,40 +66,54 @@
                 <h1>Bunmi Davies</h1>
         
 
-        <div id="navbar"><a href="index.html">about</a><a href="projects.html">projects</a></div>
+                <div id="navbar"><a href="index.html">about</a><a href="projects.html">projects</a><a href="contact.html">contact</a></div>
             </div>
 
             <div class="container">
             <p>Hi.</p>
-            <p>I create random things which interest me. Or sometimes I tweak some other stuff I've seen on the internet.</p>
+            <p>I create and put stuff on the internet - basically anything that interests me.</p>
             </div>
+            
             <div class="container">
-            <p>Some nice trivia:</p>
+            <p>Stuff about me:</p>
+            <hr>
+            
+            
+                    <ul><b id="skillsbutton">►Skills</b>
+                        <div id="skills" style="display:none;">
+                            <li type="none">HTML5</li>
+                            <li type="none">CSS3/Bootstrap</li>
+                            <li type="none">Javascript</li>
+                            <li type="none">Jquery</li>
+                            <li type="none">PHP</li>
+                            <li type="none">R</li>
+                            <li type="none">p5.js</li>
+                            <li type="none">some c++</li>
+                            <li type="none">a bit of electron</li>
+                            <li type="none">a bit of react</li>
+                            
+                        </div>
+                        </ul>
+            
+            <hr>
 
-            <ul>Skills
-                    <li type="circle">HTML5</li>
-                    <li type="circle">CSS3/Bootstrap</li>
-                    <li type="circle">Javascript</li>
-                    <li type="circle">Jquery</li>
-                    <li type="circle">PHP</li>
-                    <li type="circle">p5.js</li>
-                    <li type="circle">a bit of electron</li>
-                    <li type="circle">a bit of react</li>
-                </ul>
 
-            <ul>Games
-                <li type="circle">League of Legends(mainly)</li>
-                <li type="circle">Rocket League(not much anymore)</li>
+            <ul><b id="gamebutton">►Games</b>
+                <div id="games" style="display:none;">
+                <li type="none">League of Legends(mainly)</li>
+                <li type="none">Rocket League(not much anymore)</li>
+                </div>
             </ul>
-
-            <ul>Music (Only a few, actual list is too long) 
-                    <li type="circle">Logic</li>
-                    <li type="circle">J cole</li>
-                    <li type="circle">BROCKHAMPTON</li>
-                    <li type="circle">Gorillaz</li>
-                    <li type="circle">Vince Staples</li>
-                    <li type="circle">Elijah Who</li>
-                    
+            <hr>
+            <ul><b id="musicbutton">►Music (Only a few, actual list is too long)</b>
+                <div id="music" style="display:none;">
+                    <li type="none">Logic</li>
+                    <li type="none">J cole</li>
+                    <li type="none">BROCKHAMPTON</li>
+                    <li type="none">Gorillaz</li>
+                    <li type="none">Vince Staples</li>
+                    <li type="none">Elijah Who</li>
+                </div>
                 </ul>
             </div>
         </div>
