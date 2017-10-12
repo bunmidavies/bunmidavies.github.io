@@ -31,24 +31,18 @@
                 {name:"pythoninanutshell",repo:"pythoninanutshell",desc:"Python, summarised in a nutshell."},
                 {name:"minipong",repo:"minipong",desc:"Simple pong made with html5 canvas."},
                 {name:"fizzbuzz",repo:"fizzbuzz",desc:"The problem that apparently eliminates 99% of computer scientists."},
-                {name:"really good<span style='font-family:arial'>â„¢</span>",repo:"reallygood",desc:"A small page for a discord server i'm in, called really good<span style='font-family:arial'>â„¢</span>"},
+                {name:"really good<span style='font-family:arial'>™</span>",repo:"reallygood",desc:"A small page for a discord server i'm in, called really good<span style='font-family:arial'>™</span>"},
                 {name:"The superformula",repo:"superformula",desc:"A bit of an explanation of the superformula, made by Johan Gielis in 2000."},
                 {name:"Orbs",repo:"orbs",desc:"Colorful, trippy orbs."}
                 ];
-            $(function(){
+            
                 for(var i=0;i<projects.length;i++)
-                {
-                    var elem = $(`
-                    <div class="container">
-                <div id="project">
-                    <h2>`+projects[i].name+`</h2>
-                    <p>`+projects[i].desc+`</p>
-                    <a href="http://bunmidavies.github.io/`+projects[i].repo+`" target="_blank">page</a><a href="https://github.com/bunmidavies/`+projects[i].repo+`" target="_blank">github repo</a>
-                </div>
-                </div>`)
-                    $("#list").append(elem);
+{
+			
+                    var node = "<div class='container'><div id='project'><h2>"+projects[i].name+"</h2><p>"+projects[i].desc+"</p><a href='http://bunmidavies.github.io/"+projects[i].repo+"' target='_blank'>page</a><a href='https://github.com/bunmidavies/"+projects[i].repo+"' target='_blank'>github repo</a></div></div>";
+                    document.getElementById("list").innerHTML += node;
                 }
-            })
+            
         </script>
 
 
