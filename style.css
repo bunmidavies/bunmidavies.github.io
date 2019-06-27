@@ -1,136 +1,107 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+body{
+    font-family:"DM Sans";
+}
+
+h1{
+    font-size:4em;
+}
+
+h5{
+    font-size: 1.2em;
+}
 
 
-html{overflow-y:scroll;
-     }
+.title{
+    color:rgb(49, 49, 49);
+    margin-left:5%;
+    margin-right:5%;
+}
 
+.bp{
+    color:rgb(149, 165, 175);
+}
 
-a:hover, a:focus{
+.navigation{
+    color:rgb(49, 49, 49);
+    font-size:4.5vh;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.navigation span{
+    cursor:pointer;
+    position: relative;
     text-decoration: none;
+    margin-right:3.4vw;
 }
-
-
-@keyframes fadein{
-    0%{opacity:0;
+@media screen and (min-width: 1800px) {
+    .navigation span {
+       font-size: 34px;
     }
-    20%{opacity:0;}
-    100%{opacity:100;}
-}
-@keyframes changecol {
-    0%{background-color: #6DC66D;}
-    10%{background-color: #D482B9;}
-    25%{background-color: #D8AA58;}
-    50%{background-color: #4B4BB4;}
-    60%{background-color: #E8D035;}
-    75%{background-color: #C13E3E;}
-    100%{background-color: #6DC66D;}
-}
-.container{
-    margin-top:10px;
-    
-    width:90%;
-   padding:0;
-    }
+  }
 
-
-
-
-body{display:block;
-width:70%;
-margin:auto;
-
-background-color:#6DC66D;
-font-family:"Nunito";
-margin-top:0;
-
-animation:40s changecol;
-animation-iteration-count: infinite;
--moz-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
--o-animation-iteration-count: infinite;
-}
-
-*{position:relative;
-    
-            animation: 2s fadein;
-    
-    }
-
-#main{background-color:white;
-margin-top:0;
-border-bottom-left-radius: 17px;
-border-bottom-right-radius: 17px;
-height:100%;
-padding:10px;}
-
-#project{
-padding:15px;
-border-radius:17px;
-transition-duration:1s;
-background-color:white;}
-
-#project:hover{box-shadow:2px 1px 4px grey;
-transition-duration:1s;
-
-}
-
-#skillsbutton:hover{cursor:pointer;
-text-shadow:0.2px 0.2px 0.2px grey;}
-#gamebutton:hover{cursor:pointer;
-text-shadow:0.2px 0.2px 0.2px grey;}
-#musicbutton:hover{cursor:pointer;
-text-shadow:0.2px 0.2px 0.2px grey;}
-
-ul{font-size:24px;}
-li:hover{color:#419841;}
-
-
-p{color:#333;
-font-size:24px;}
-
-a{text-decoration:none;
-color:grey;
-font-size:24px;
-transition-duration:.25s;
-margin-right:20px;
-
-}
-
-a:before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    border-radius:4px;
-    background:black;
-    visibility: hidden;
-    border-radius: 5px;
+.navigation span::before{
+    content : "";
+    position : absolute;
+    width : 100%;
+    height : 1px;
+    bottom : 0;
+    left : 0;
+    background-color : rgb(49, 49, 49);;
+    visibility : hidden;
+    -webkit-transform : scaleX(0);
     transform: scaleX(0);
-    transition: .25s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
-a:hover:before,
-a:focus:before {
-    content: "";
-    position: absolute;
+.navigation span:hover:before{
     visibility: visible;
-  transform: scaleX(1);
-  height:2px;
-  border-radius: 5px;
-  
+    height : 1px;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
-a:hover{
-    color:black;
-    transition-duration:.25s;
-   
+@media only screen and (max-width: 400px){
+    body{
+        text-align:center;
+    }
+    .navigation{
+        margin-left:0%;
+        margin-right:0%;
+    }
+    .navigation span::before{
+        content: "\A"; 
+        white-space: pre; 
+    }
+    
 }
 
-h1{color:#333;
-text-shadow:1px 1px 0.5px grey;
-font-size:50px;
-margin-right:50px;
+@media only screen and (min-width: 401px) and (max-width:960px){
+    body{
+        text-align:center;
+    }
+    .navigation{
+        margin-left:0%;
+        margin-right:0%;
+    }
+    .navigation span::before{
+        content: "\A"; 
+        white-space: pre; 
+    }
+    
+}
+
+@media only screen and (min-width: 961px){
+    body{
+        text-align:left; 
+    }
+
+    #name{
+        line-height:1px;
+    }
+    /*html{
+        border-left:solid 3px black;
+        height:100%;
+    }*/
 }
