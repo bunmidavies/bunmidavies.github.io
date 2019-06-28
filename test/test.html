@@ -1,0 +1,60 @@
+<style>
+
+
+@media only screen and (max-width: 400px){
+    #wrapper{
+  display:block;
+  width:100%;
+}
+#w30{
+  background:yellow;
+  width:100%;
+}
+
+#w70{
+  background:pink;
+  width:100%;
+}
+}
+
+@media only screen and (min-width: 401px) and (max-width:960px){
+    #wrapper{
+  display:flex;
+  width:100%;
+}
+#w30{
+  background:yellow;
+  width:30%;
+}
+
+#w70{
+  background:pink;
+  width:70%;
+}
+}
+
+@media only screen and (min-width: 961px){
+    #wrapper{
+  display:flex;
+  width:100%;
+}
+#w30{
+  background:yellow;
+  width:30%;
+}
+
+#w70{
+  background:pink;
+  width:70%;
+}
+}
+
+</style>
+
+<div id="wrapper">
+    <div id="w30">  
+      width 30%
+    </div><div id="w70">  
+      width 70%
+    </div>
+  </div>
