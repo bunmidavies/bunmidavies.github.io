@@ -112,11 +112,12 @@ h5{
     padding-bottom:3vh;
     color:rgb(145, 145, 145);}
 .middle{
-        color:#fff;}
+    color:#fff;}
 
 .bottom{
     padding-top: 3rem;
     padding-bottom: 3rem;
+    
 }
 
 .navwrapper span:hover{
