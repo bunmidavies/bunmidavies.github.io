@@ -5,6 +5,7 @@ body{
     position: relative;
   min-height: 100%;
   padding-bottom: 1rem;
+    animation: fadein 1s;
 }
 
 html{
@@ -86,6 +87,9 @@ h5{
     
 }
 
+#subheading{
+    animation:3s multicolor infinite;
+
 .navwrapper{
     width:100%;
     display:block;
@@ -123,6 +127,22 @@ h5{
 .navwrapper span:hover{
     color:rgb(149, 165, 175);
     transition-duration:0.75s;
+}
+
+@keyframes fadein {
+    0%{opacity:0}
+    100%{opacity:1}
+}
+
+@keyframes multicolor {
+    0%{color:#242322;}
+    20%{color:#242322;}
+    25%{color:#d98f45;}
+    45%{color:#d98f45;}
+    50%{color:#73b068;}
+    70%{color:#73b068;}
+    75%{color:#464287;}
+    100%{color:#242322;}
 }
 
 @media only screen and (max-width: 400px){
