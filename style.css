@@ -136,12 +136,13 @@ h5{
 
 @-webkit-keyframes multicolor {
     0%{color:#242322;}
-    20%{color:#242322;}
+    15%{color:#242322;}
     25%{color:#d98f45;}
-    45%{color:#d98f45;}
+    40%{color:#d98f45;}
     50%{color:#73b068;}
-    70%{color:#73b068;}
+    65%{color:#73b068;}
     75%{color:#464287;}
+    90%{color:#464287;}
     100%{color:#242322;}
 }
 
