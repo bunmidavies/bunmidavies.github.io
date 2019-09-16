@@ -88,7 +88,7 @@ h5{
 }
 
 #subheading{
-    animation:3s multicolor infinite;
+    animation:3s multicolor infinite;}
 
 .navwrapper{
     width:100%;
@@ -129,12 +129,12 @@ h5{
     transition-duration:0.75s;
 }
 
-@keyframes fadein {
+@-webkit-keyframes fadein {
     0%{opacity:0}
     100%{opacity:1}
 }
 
-@keyframes multicolor {
+@-webkit-keyframes multicolor {
     0%{color:#242322;}
     20%{color:#242322;}
     25%{color:#d98f45;}
